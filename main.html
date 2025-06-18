@@ -9,17 +9,32 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<img src="#home" alt="my_image">
-	<h1>Saranya Barani</h1>
-	<p>This is my portfolio</p>
-	<nav>
-		<ul>
-			<li>project</li>
-			<li>skills</li>
-			<li>personal information</li>
-		</ul>
-	</nav>
-    <script type="text/javascript" src="./script.js">
+	 <nav role="navigation">
+    <ul role="list">
+      <li role="listitem"><a href="#about">About</a></li>
+      <li role="listitem"><a href="#projects">Projects</a></li>
+      <li role="listitem"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Heading with ARIA role -->
+  <h1 role="heading">Welcome to My Portfolio</h1>
+
+  <!-- Image with ARIA role and alt text -->
+  <img role="img" src="profile.jpg" alt="Portrait of the portfolio owner">
+
+  <!-- Description section -->
+  <p id="about">
+    Hello! I’m a passionate web developer focused on creating accessible and user-friendly websites.
+  </p>
+
+  <!-- Project list with ARIA roles -->
+  <h2 id="projects">Projects</h2>
+  <ul role="list">
+    <li role="listitem">Accessible Web Design</li>
+    <li role="listitem">Responsive Portfolio Site</li>
+    <li role="listitem">JavaScript Game Development</li>
+  </ul>type="text/javascript" src="./script.js">
 </script>
 
 </body>
